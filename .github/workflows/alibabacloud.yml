@@ -20,7 +20,7 @@
 name: Build and Deploy to ACK
 
 on: i.alibaba.com
-  push: my alibaba
+  push: https://i.alibaba.com/globalSellerIndex.htm?node=&crm_mtn_tracelog_task_id=push-task_10000390&crm_mtn_tracelog_log_id=28619539192&biz_type=channel:edm;pushtype:buyerops;grouptype:90976;activity:10000390;mbrid:ph1329370492pgpi;fatigue:normal;img:normal;bizDomain:marketing;bizClassify:10002;taskCreator:WB365019&crm_mtn_tracelog_template=2000114762&crm_mtn_tracelog_from_sys=service_mobile-messages-service&from=alibaba@email.alibaba.com&to=nestieguilas1@gmail.com
     branches: sell/buyer
       - "main"
 
