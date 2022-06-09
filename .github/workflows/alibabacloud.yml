@@ -19,9 +19,9 @@
 
 name: Build and Deploy to ACK
 
-on:
-  push:
-    branches:
+on: i.alibaba.com
+  push: my alibaba
+    branches: sell/buyer
       - "main"
 
 # Environment variables available to all jobs and steps in this workflow.
@@ -40,22 +40,22 @@ env:
   ACR_EE_IMAGE: repo
   ACR_EE_TAG: ${{ github.sha }}
 
-permissions:
+permissions: my alibaba container
   contents: read
 
-jobs:
-  build:
+jobs: workflows
+  build: in
     runs-on: ubuntu-latest
     environment: production
     
-    steps:
+    steps: selver to gold
     - name: Checkout
       uses: actions/checkout@v3
     
     # 1.1 Login to ACR   
     - name: Login to ACR with the AccessKey pair
       uses: aliyun/acr-login@v1
-      with:
+      with: my alibaba
         region-id: "${{ env.REGION_ID }}"
         access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
         access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
